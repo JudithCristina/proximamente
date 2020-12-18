@@ -1,38 +1,88 @@
-.App {
+html {
+  font-size: 0.98vw;
+  font-family: "Mont-heavy";
+  padding: 0;
+  margin: 0;
+}
+
+.box-proximamente {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(242, 159, 183, 0.4) url(../src/assets/fondo.svg);
+  position: relative;
+  background-size: cover;
+  background-position: center top;
+}
+
+@font-face {
+  font-family: "Mont-heavy";
+  src: url(font/Mont-Heavy.otf);
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: 900;
   text-align: center;
+  line-height: 5.2rem;
+  color: #eb668c;
+  position: relative;
+  top: 10%;
+}
+.title span {
+  color: #4b66ad;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cargando {
+  position: relative;
+  margin: auto;
+  display: block;
+  top: 14%;
+  width: 35%;
+}
+.subtitle {
+  font-size: 1.9rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 2rem;
+  color: #eb668c;
+  position: relative;
+  top: 19%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.subtitle span {
+  color: #4b66ad;
+}
+
+.logo {
+  position: relative;
+  margin: auto;
+  display: block;
+  top: 25%;
+  width: 18%;
+}
+
+@media (max-width: 769px) {
+  html {
+    font-size: 4.6vw;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .title{
+    font-size: 3rem;
+    line-height: 2.7rem;
+    top: 10%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .cargando {
+    top: 13%;
+    width: 80%;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    top: 19%;
+  }
+
+  .logo{
+    width: 50%;
   }
 }
